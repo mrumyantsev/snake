@@ -2,7 +2,7 @@
 
 Manage the snake moving direction and devour as many apples as you can get. At the top of game screen is located score and speed. If an apple will be eaten the score will be increases. For every 10 apples the game speed will be increased. If snake's head will bite the tail or hit the wall, the game will over.
 
-![v0_1](https://user-images.githubusercontent.com/36193247/232428605-b87d9c17-37f7-4274-8f46-5b7c581899bd.png)
+![v0_1](https://user-images.githubusercontent.com/36193247/232604845-206f440b-cc3f-4b43-8fae-ab7154b5275d.png)
 
 # How to play it
 
