@@ -1,4 +1,4 @@
-# Snake: The Game v0.1
+# Snake: The Game v0.1.1
 
 Manage the snake moving direction and devour as many apples as you can get. At the top of game screen is located score and speed. If an apple will be eaten the score will be increases. For every 10 apples the game speed will be increased. If snake's head will bite the tail or hit the wall, the game will over.
 
