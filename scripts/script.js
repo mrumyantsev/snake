@@ -46,7 +46,7 @@ const loadConfig = () => {
     cfg.score = defaultScore;
     cfg.speedMovesPerSecond = defaultSpeed;
 
-    cfg.isSnakeMulticolorized = true;
+    cfg.isSnakeMulticolored = true;
 };
 
 applyStyles = () => {
@@ -160,7 +160,7 @@ class Snake {
         let color = this.#snakeColor;
 
         for (let i = 0; i < this.#positions.length; i++) {
-            if (cfg.isSnakeMulticolorized)
+            if (cfg.isSnakeMulticolored)
                 color = this.#pickPositionColor(i);
 
             this.#positions[i].drawSquare(color)
