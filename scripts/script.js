@@ -45,6 +45,8 @@ const loadConfig = () => {
     cfg.isGameContinues = true;
     cfg.score = defaultScore;
     cfg.speedMovesPerSecond = defaultSpeed;
+
+    cfg.isSnakeMulticolorized = true;
 };
 
 applyStyles = () => {
@@ -122,6 +124,8 @@ class Snake {
     #direction = directions.right;
     #nextDirection = directions.right;
     #snakeColor = "Blue";
+    #snakeExtraColor1 = "Black";
+    #snakeExtraColor2 = "Red";
 
     /**
      * @return {Block[]}
@@ -153,8 +157,14 @@ class Snake {
     }
 
     draw() {
-        for (let i = 0; i < this.#positions.length; i++)
-            this.#positions[i].drawSquare(this.#snakeColor)
+        let color = this.#snakeColor;
+
+        for (let i = 0; i < this.#positions.length; i++) {
+            if (cfg.isSnakeMulticolorized)
+                color = this.#pickPositionColor(i);
+
+            this.#positions[i].drawSquare(color)
+        }
     }
 
     move() {
@@ -201,6 +211,13 @@ class Snake {
         }
 
         this.#positions.pop();
+    }
+
+    #pickPositionColor(index) {
+        if (index % 2 === 0)
+            return this.#snakeExtraColor1;
+        
+        return this.#snakeExtraColor2;
     }
 
     #checkWallCollision(head) {
