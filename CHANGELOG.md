@@ -1,13 +1,13 @@
-# Changelog
+# Журнал изменений
 
 ## [0.1.1] - 2023-04-18
 
-### Added
+### Добавлено
 
-- Option to change snake colorization between multicolored and blue.
+- Возможность переключить раскраску змейки.
 
 ## [0.1] - 2023-04-17
 
-### Added
+### Добавлено
 
-- First Release.
+- Первый выпуск.
