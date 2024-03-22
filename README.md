@@ -1,17 +1,60 @@
-# Snake: The Game
+# Змейка на JavaScript
 
-Manage the snake moving direction and devour as many apples as you can get. At the top of game screen is located score and speed. If an apple will be eaten the score will be increases. For every 10 apples the game speed will be increased. If snake's head will bite the tail or hit the wall, the game will over.
+Данный репозиторий содержит браузерную реализацию игры "Змейка", написанную на языке JavaScript, стилизованную под портативную игровую консоль 90-х [Brick Game](https://ru.wikipedia.org/wiki/Brick_Game).
 
-![v0_1_1_multicolored_snake](https://user-images.githubusercontent.com/36193247/232879995-72cf0245-8f75-47b5-b08c-c3f57b186c9c.png)\
-*Snake Multicolored: ON*
+![Змейка](./screen-snake-default.png "Змейка обычного цвета")\
+*Разноцветная змейка: выкл.*
 
-![v0_1](https://user-images.githubusercontent.com/36193247/232604845-206f440b-cc3f-4b43-8fae-ab7154b5275d.png)\
-*Snake Multicolored: OFF*
+![Змейка](./screen-snake-multicolor.png "Разноцветная змейка")\
+*Разноцветная змейка: вкл.*
 
-# How to play it
+## Правила игры
 
-- Download all the code from this repository or clone it and open file `index.html` with any web-browser.
-- (Optional) You can also upload this application on a hosting server to allow access from the Internet to its main page.
-- Use `LEFT/UP/RIGHT/DOWN ARROW` keys to control snake direction.
-- Use `ENTER`, `CTRL`, `ESC`, and `SPACE` keys to restart the game.
-- Choose between multicolored snake and default blue snake by changing of the parameter in config.
+Управляйте направлением движения змейки и съедайте как можно больше яблок. В верхней части игрового экрана расположены счет и скорость. За каждое съеденное яблоко счет увеличится. За каждые 10 яблок скорость игры возрастет. Если голова змейки укусит хвост или ударится о стену, игра закончится.
+
+## Параметры игры
+
+Файл `scripts/script.js` содержит логику игры, а также начальные параметры для изменения свойств и поведения у объектов игры:
+
+- `canvasWidth = 400` - изменяет размер игрового экрана по вертикали на 400 пикселей;
+- `canvasHeight = 400` - изменяет размер игрового экрана по горизонтали на 400 пикселей;
+- `blockSize = 20` - изменяет длину стороны одного из квадратов на 20 пикселей;
+- `speedMovesPerSecond = 4` - устанавливает начальную скорость движения змейки на 4 шага в секунду;
+- `isSnakeMulticolored = true` - включает цветную раскраску змейки.
+
+## Управление в игре
+
+* Движение влево - стрелка *влево*.
+* Движение вправо - стрелка *вправо*.
+* Движение вверх - стрелка *вверх*.
+* Движение вниз - стрелка *вниз*.
+* Рестарт игры - клавиши *Enter*, *Ctrl*, *Esc*, *Пробел*.
+
+## Системные требования
+
+* **ОС:** Windows / MacOS / Linux / SteamOS / Android.
+* **Веб-браузер:** Edge / Safari / Mozilla / Chrome / Brave.
+
+## Запуск игры
+
+### Вариант 1: Открытие через браузер
+
+Откройте папку с проектом и откройте веб-браузер.
+
+Перетащите мышкой файл `index.html` в открытое окно браузера, либо откройте данный файл через меню **Файл/Открыть** в самом браузере.
+
+### Вариант 2: Запуск на веб-сервере
+
+Убедитесь, что у вас установлен и включен один из веб-серверов (Apache либо Nginx).
+
+Переместите файл `index.html` и папку `scripts` в директорию веб-сервера, где хранятся файлы HTML-разметки для использования их сервером. Например:
+
+```
+/var/www/
+```
+
+Откройте браузер и перейдите по соответствующему вашему серверу адресу (добавив к нему порт через двоеточие, если нужно). Пример адреса:
+
+```
+http://localhost:80/
+```
