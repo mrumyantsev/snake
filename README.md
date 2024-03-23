@@ -32,8 +32,14 @@
 
 ## Системные требования
 
-* **ОС:** Windows / MacOS / Linux / SteamOS / Android.
-* **Веб-браузер:** Edge / Safari / Mozilla / Chrome / Brave.
+**Операционная система:**
+
+- Windows / MacOS / Linux / SteamOS / Android.
+
+**Программное обеспечение:**
+
+- веб-браузер Edge / Safari / Mozilla / Chrome / Brave.
+- веб-сервер Apache / Nginx (опционально).
 
 ## Запуск игры
 
