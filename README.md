@@ -38,8 +38,8 @@
 
 **Программное обеспечение:**
 
-- веб-браузер Edge / Safari / Mozilla / Chrome / Brave;
-- (опционально) веб-сервер Apache / Nginx.
+- веб-браузер Edge / Safari / Opera / Mozilla / Chrome;
+- веб-сервер Apache / Nginx (необязательно).
 
 ## Запуск игры
 
